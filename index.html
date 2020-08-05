@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuanto pesas en otro planeta</title>
+
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+  <header>
+    <h1>Cuanto pesas en otro planeta</h1>
+    <h2>Tú peso varia segun la gravedad del planeta</h2>
+  </header>
+
+  <section>
+    <p>
+      Ingresa tú peso y selecciona el planeta, <br/>para saber tú peso en ese planta.
+    </p>  
+    <form action="">
+      <input type="text" class="validanumericos" placeholder="Ingresa tu peso" id="txt_peso" required/>
+      
+      <select name="planet" id="planetas">
+        <option value="3.7" selected>Mercurio</option>
+        <option value="8.87">Venus</option>
+        <option value="9.8">Tierra</option>
+        <option value="3.7">Marte</option>
+        <option value="24.7">Júpiter</option>
+        <option value="10.4">Saturno</option>
+        <option value="8.8">Urano</option>
+        <option value="11.1">Neptuno</option>
+      </select>
+      <input type="button" id="btn_calcular" value="Calcular"/>
+    </form>
+
+    <script src="assets/js/calc.js"></script>
+    <p id="resultado"><br/></p>
+  </section>
+
+  <footer>
+    <p>Programmer by <a href="https://unsplash.com/@cazault">Jheyson Eduardo Galvis Valencia</a> </p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
